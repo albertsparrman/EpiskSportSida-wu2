@@ -1,0 +1,35 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+h1 {
+    width: 100px;
+    height: 23px;
+    position: relative;
+    animation-name: dinmor;
+    animation-duration: 5s;
+    animation-iteration-count: 48;
+}
+
+@keyframes dinmor {
+    0% {left: 0px; top: 0px;}
+    100% { left: 900px; top: 400px;}
+}
+
+.top {
+    background-color: black;
+    color: white;
+    border-bottom: solid 3px white;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+
+  
