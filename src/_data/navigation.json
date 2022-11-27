@@ -1,10 +1,38 @@
 [
     {
         "url": "/",
-        "title": "Intressant ställe"
+        "title": "Hem"
     },
     {
-        "url": "/bindex",
-        "title": "Flaggsak"
+        "url": "/",
+        "title": "Om klubben"
+    },
+    {
+        "url": "/",
+        "title": "Ny i GUIF"
+    },
+    {
+        "url": "/",
+        "title": "Registrera dig i GUIF"
+    },
+    {
+        "url": "/",
+        "title": "Klasslag"
+    },
+    {
+        "url": "/",
+        "title": "Avgifter"
+    },
+    {
+        "url": "/",
+        "title": "GUIF-stugan"
+    },
+    {
+        "url": "/",
+        "title": "Välj lag"
+    },
+    {
+        "url": "/",
+        "title": "Logga in"
     }
 ]

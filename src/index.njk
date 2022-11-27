@@ -1,8 +1,64 @@
 ---
 layout: base.njk
+title: GUIF Innebandy
 ---
 
 <main>
-    <div></div>
-    <h1>Jag gråt</h1>
+    <div class="games">
+        <button id="left" class="btn-games-left">
+            <span class="material-symbols-outlined">
+                chevron_left
+            </span>  
+        </button>
+        <div class="games-box">   
+            <ul>
+                {% for item in navigation %}
+                    <li>
+                        <a href="{{ item.url }}">{{ item.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <button id="right" class="btn-games-right">
+            <span class="material-symbols-outlined">
+                chevron_right
+            </span>  
+        </button>
+        <script src="games.js"></script>
+    </div>
+    <div class="news-background">
+        <div class="news">
+            <h1>Herrar Div 2 tar hem tredje raka segern efter säsongsinledningen</h1>
+            <div class="mini-news">
+                <div class="mini-news-box">
+                    <p class="title">Herrar Div 2 tar hem tredje raka segern efter säsongsinledningen</p>
+                    <div id="progress">
+                        <div id="bar"></div>
+                    </div>
+                    <p class="date">2022-10-15</p>
+                </div>
+                <div class="mini-news-box">
+                    <p class="title">GUIF-stugan stänger för resten av säsongen</p>
+                    <div id="progress">
+                        <div id="bar"></div>
+                    </div>
+                    <p class="date">2022-9-22</p>
+                </div>
+                <div class="mini-news-box">
+                    <p class="title">IBK Dalen bjuder spelare och ledare i Gimonäs innebandy på föreningskväll</p>
+                    <div id="progress">
+                        <div id="bar"></div>
+                    </div>
+                    <p class="date">2022-11-18</p>
+                </div>
+                <div class="mini-news-box">
+                    <p class="title">Nytt avtal med Select och XXL från 2023</p>
+                    <div id="progress">
+                        <div id="bar"></div>
+                    </div>
+                    <p class="date">2022-08-09</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>

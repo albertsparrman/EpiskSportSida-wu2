@@ -1,12 +1,14 @@
 <nav>
     <div class="top">
-        logga
+        <a href="/">{% image "./src/image/_genLogga.png", "logo" %}</a>
     </div>
     <ul>
         {% for item in navigation %}
-            <li>
-                <a href="{{ item.url }}">{{ item.title }}</a>
-            </li>
+            <a href="{{ item.url }}">
+                <li>
+                    {{ item.title }}
+                </li>
+            </a>
         {% endfor %}
     </ul>
 </nav>

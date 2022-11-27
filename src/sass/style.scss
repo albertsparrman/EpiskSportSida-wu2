@@ -1,35 +1,228 @@
+:root {
+    --order1: 1;
+    --white: #ffffff6f;
+}
+
 html, body {
     margin: 0;
     padding: 0;
-    display: flex;
+    font-family: 'Inter', sans-serif;
+    background-color: #0e0e0e;
+    scroll-behavior: smooth;
+}
+
+.material-symbols-outlined {
+    color: white;
+    font-size: 1.7rem;
+}
+
+.btn-games-left:active {
+    .material-symbols-outlined{    
+        font-size: 0.8rem;
+        transition: 0.7s;
+    } 
+}
+
+.btn-games-right:active {
+    .material-symbols-outlined{    
+        font-size: 0.8rem;
+        transition: 0.7s;
+    } 
 }
 
 
-h1 {
-    width: 100px;
-    height: 23px;
-    position: relative;
-    animation-name: dinmor;
-    animation-duration: 5s;
-    animation-iteration-count: 48;
-}
 
-@keyframes dinmor {
-    0% {left: 0px; top: 0px;}
-    100% { left: 900px; top: 400px;}
+nav {
+    width: 100%;
+    text-align: center;
 }
 
 .top {
-    background-color: black;
+    background-color: #0e0e0e;
     color: white;
-    border-bottom: solid 3px white;
-    box-shadow: 0px 0px 10px 0px black;
+    border-bottom: solid 4px white;
+    padding: 10px;
+    padding-top: 14px;
 }
 
 ul {
+    align-items: center;
+    box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.425);
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    background-color: #aeaeaf;
+}
+
+li {
+    font-size: 1rem;
+}
+
+ul > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-grow: 1;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+ul > a:hover {
+    background-color: #818184;
+    transition: 0.3s;
+}
+
+.top > a > picture > img {
+    width: 3rem;
+    height: auto;
+}
+
+.games {
+    display: flex;
+    position: relative;
+    height: 12rem;
+}
+
+.btn-games-left {
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 3rem;
+    border-style: none;
+    background-color: #272829;
+}
+
+.btn-games-right {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 3rem;
+    border-style: none;
+    background-color: #272829;
 }
 
 
-  
+.games-box {
+    position: relative;
+    width: 100%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    overflow-x: hidden;
+}
+
+.games-box > ul {
+    height: 100%;
+    background-color: #1c1d1d;
+    overflow-x: hidden;
+}
+
+.games-box > ul > li:nth-child(1) {
+    position: absolute;
+    left: calc(100% / 3 * 0);
+    background-color: aqua;
+    width: calc(100% / 3);
+}
+.games-box > ul > li:nth-child(2) {
+    position: absolute;
+    left: calc(100% / 3 * var(--order1));
+    background-color: red;
+    width: calc(100% / 3);
+    z-index: 1;
+}
+.games-box > ul > li:nth-child(3) {
+    position: absolute;
+    left: calc(100% / 3 * 2);
+    background-color: yellow;
+    width: calc(100% / 3);
+}
+
+
+.news-background {
+    width: 100%;
+    height: 40rem;
+    display: grid;
+    position: relative;
+}
+
+.news-background::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/4UUdcc6JtM-600.jpeg);
+    background-size: cover;
+    background-position: center 60%;
+    filter: brightness(0.5);
+    box-shadow: inset 00px -190px 200px 30px #1d1d1d;
+    z-index: 0;
+}
+
+.news > h1, .news > h2 {
+    margin: 0;
+    margin-left: 5.8rem;
+    margin-right: 5.8rem;
+    font-size: 3.4rem;
+    margin-top: 18rem;
+    font-weight: 600;
+    color: white;
+    position: relative;
+
+}
+
+.news-background:hover {
+    background-size: 1rem;
+}
+
+h1  {
+    height: 10rem;
+}
+
+.mini-news {
+    position: relative;
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 5.8rem;
+    margin-right: 5.8rem;
+    justify-content: space-between;
+}
+
+.mini-news-box {
+    color: var(--white);
+    width: 20%;
+}
+
+.title {
+    font-size: 1rem;
+    height: 6.5rem;
+}
+
+.mini-news-box:nth-child(1) {
+    color: white;
+    #progress {
+        background-color: white;
+    }
+    #bar {
+        background-color: #818184;
+        width: 20%;
+    }
+}
+
+#progress {
+    top: 20rem;
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
+}
+
+#bar {
+    width: 0%;
+    height: 2px;
+}
+
+.date {
+    font-size: 0.68rem;
+}
