@@ -1,5 +1,7 @@
 :root {
-    --order1: 1;
+    --order1: 0;
+    --order2: 1;
+    --order3: 2;
     --white: #ffffff6f;
 }
 
@@ -82,7 +84,7 @@ ul > a:hover {
 .games {
     display: flex;
     position: relative;
-    height: 12rem;
+    height: 10rem;
 }
 
 .btn-games-left {
@@ -120,24 +122,33 @@ ul > a:hover {
     overflow-x: hidden;
 }
 
-.games-box > ul > li:nth-child(1) {
+.games-box > div:nth-child(1) {
     position: absolute;
-    left: calc(100% / 3 * 0);
-    background-color: aqua;
-    width: calc(100% / 3);
-}
-.games-box > ul > li:nth-child(2) {
-    position: absolute;
+    top: 0;
+    height: 100%;
     left: calc(100% / 3 * var(--order1));
-    background-color: red;
+    background-color: #1c1d1d;
     width: calc(100% / 3);
-    z-index: 1;
+    transition: 0.9s;
+    cursor: pointer;
 }
-.games-box > ul > li:nth-child(3) {
+.games-box > div:nth-child(2) {
     position: absolute;
-    left: calc(100% / 3 * 2);
+    top: 0;
+    height: 100%;
+    left: calc(100% / 3 * var(--order2));
+    background-color: #1c1d1d;
+    width: calc(100% / 3);
+    transition: 0.9s;
+}
+.games-box > div:nth-child(3) {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: calc(100% / 3 * var(--order3));
     background-color: yellow;
     width: calc(100% / 3);
+    transition: 0.9s;
 }
 
 
@@ -225,4 +236,57 @@ h1  {
 
 .date {
     font-size: 0.68rem;
+}
+
+
+.scorebox {
+    display: inline-flex;
+    align-items: center;
+    
+}
+
+.scorebox > .img-size > picture > img {
+    width: auto;
+    height: 2.3rem;
+}
+
+.center {
+    text-align: center;
+    color: white;
+}
+
+.score {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: white;
+    margin: 0 1rem;
+}
+
+.img-size {
+    width: 4rem;
+}
+
+.arena {
+    font-size: 0.7rem;
+}
+
+.status {
+    font-size: 0.9rem;
+}
+
+.statistik {
+    background-color: #aeaeaf;
+    margin: 2px;
+}
+
+.p-stat {
+    padding: 8px;
+    color: #1d1d1d;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.statistik:hover {
+    background-color: #818184;
+    transition: 0.5s;
 }

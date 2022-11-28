@@ -11,13 +11,22 @@ title: GUIF Innebandy
             </span>  
         </button>
         <div class="games-box">   
-            <ul>
-                {% for item in navigation %}
-                    <li>
-                        <a href="{{ item.url }}">{{ item.title }}</a>
-                    </li>
-                {% endfor %}
-            </ul>
+            <div>
+                <div class="center">
+                    <p class="status">Avslutad</p>
+                    <div class="scorebox">
+                        <div class="img-size">{% image "./src/image/_genLogga.png", "logo" %}</div>
+                        <p class="score">3 - 2</p>
+                        <div class="img-size">{% image "./src/image/_genLogga (1).png", "logo" %}</div>
+                    </div>
+                    <p class="arena">Sjöfruhallen | Herr JAS</p>
+                    <div class="statistik">
+                        <p class="p-stat">Matchstatistik</p>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+            <div></div>
         </div>
         <button id="right" class="btn-games-right">
             <span class="material-symbols-outlined">
