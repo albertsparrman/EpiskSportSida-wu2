@@ -159,6 +159,7 @@ ul > a:hover {
     position: relative;
 }
 
+
 .news-background::before {
     content: "";
     position: absolute;
@@ -166,10 +167,19 @@ ul > a:hover {
     height: 100%;
     background-image: url(/img/4UUdcc6JtM-600.jpeg);
     background-size: cover;
-    background-position: center 60%;
+    background-position: center 70%;
     filter: brightness(0.5);
     box-shadow: inset 00px -190px 200px 30px #1d1d1d;
     z-index: 0;
+    animation: bg-zoom 7s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes bg-zoom {
+    0% {background-size: 100%;}
+    80% {background-size: 115%;}
+    100% {background-size: 115%;}
 }
 
 .news > h1, .news > h2 {
@@ -177,7 +187,7 @@ ul > a:hover {
     margin-left: 5.8rem;
     margin-right: 5.8rem;
     font-size: 3.4rem;
-    margin-top: 18rem;
+    margin-top: 15rem;
     font-weight: 600;
     color: white;
     position: relative;
