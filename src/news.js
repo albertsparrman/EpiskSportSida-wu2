@@ -17,7 +17,9 @@ function myFunc(p1, p2) {
         document.getElementById("small-news-4").style.color = "#ffffff6f"
         document.getElementById("progress1").style.backgroundColor = "white"
         document.getElementById("progress4").style.backgroundColor = "#ffffff6f"
-        
+        document.getElementById("news").style.backgroundImage="url(img/4UUdcc6JtM-600.jpeg)"
+        document.getElementById('bar1').style.animation="bar 7s linear";
+        document.getElementById('bar4').style.animation="none";
     }
     if (i == 1) {
         document.getElementById("NewsHeader").innerHTML = news2 
@@ -25,7 +27,9 @@ function myFunc(p1, p2) {
         document.getElementById("small-news-1").style.color = "#ffffff6f"
         document.getElementById("progress2").style.backgroundColor = "white"
         document.getElementById("progress1").style.backgroundColor = "#ffffff6f"
-        document.getElementById("news").style.backgroundImage="url(img/lKEbTP0UCb-300.jpeg)"
+        document.getElementById("news").style.backgroundImage="url(img/news2.png)"
+        document.getElementById('bar2').style.animation="bar 7s linear";
+        document.getElementById('bar1').style.animation="none";
     }
     if (i == 2) {
         document.getElementById("NewsHeader").innerHTML = news3
@@ -33,6 +37,9 @@ function myFunc(p1, p2) {
         document.getElementById("small-news-2").style.color = "#ffffff6f"
         document.getElementById("progress3").style.backgroundColor = "white"
         document.getElementById("progress2").style.backgroundColor = "#ffffff6f"
+        document.getElementById("news").style.backgroundImage="url(img/news3.jpg)"
+        document.getElementById('bar3').style.animation="bar 7s linear";
+        document.getElementById('bar2').style.animation="none";
     }
     if (i == 3) {
         document.getElementById("NewsHeader").innerHTML = news4
@@ -40,6 +47,9 @@ function myFunc(p1, p2) {
         document.getElementById("small-news-3").style.color = "#ffffff6f"
         document.getElementById("progress4").style.backgroundColor = "white"
         document.getElementById("progress3").style.backgroundColor = "#ffffff6f"
+        document.getElementById("news").style.backgroundImage="url(img/news4.png)"
+        document.getElementById('bar4').style.animation="bar 7s linear";
+        document.getElementById('bar3').style.animation="none";
     }
     
     i++

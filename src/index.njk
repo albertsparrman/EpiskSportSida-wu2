@@ -42,33 +42,88 @@ title: GUIF Innebandy
             <div id="small-news-1" class="mini-news-box">
                 <p class="title">Herrar Div 2 tar hem tredje raka segern efter säsongsinledningen</p>
                 <div id="progress1">
-                    <div id="bar1"></div>
+                    <div id="bar1" class="bar"></div>
                 </div>
                 <p class="date">2022-10-15</p>
             </div>
             <div id="small-news-2" class="mini-news-box">
                 <p class="title">GUIF-stugan stänger för resten av säsongen</p>
                 <div id="progress2">
-                    <div id="bar"></div>
+                    <div id="bar2" class="bar"></div>
                 </div>
                 <p class="date">2022-9-22</p>
             </div>
             <div id="small-news-3" class="mini-news-box">
                 <p class="title">IBK Dalen bjuder spelare och ledare i Gimonäs innebandy på föreningskväll</p>
                 <div id="progress3">
-                    <div id="bar"></div>
+                    <div id="bar3" class="bar"></div>
                 </div>
                 <p class="date">2022-11-18</p>
             </div>
             <div id="small-news-4" class="mini-news-box" >
                 <p class="title">Nytt avtal med Select och XXL från 2023</p>
                 <div id="progress4">
-                    <div id="bar"></div>
+                    <div id="bar4" class="bar"></div>
                 </div>
                 <p class="date">2022-08-09</p>
             </div>
         </div>
 
         <script type="application/x-javascript" src="news.js"></script>
+    </div>
+
+    <div class="info">
+        <a href="">
+            <div class="kontakt">
+                <span class="material-symbols-outlined">
+                    phone_in_talk_watchface_indicator
+                </span>
+                <h2>Kontakt</h2>
+                <p>Kontaktuppgifter till GUIF</p>
+                <button class="info-btn">Kontakta oss</button>
+            </div>
+        </a>
+        <a href="">
+            <div class="policy">
+                <span class="material-symbols-outlined">
+                    description
+                </span>
+                <h2>Policy</h2>
+                <p>Här kan du läs GUIF:s policy</p>
+                <button class="info-btn">GUIF:s policy</button>
+            </div>
+        </a>
+        <a href="">
+            <div class="ledare">
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+                <h2>Ledarportalen</h2>
+                <p>Samlad information för dig som ledare</p>
+                <button class="info-btn">Klicka här</button>
+            </div>
+        </a>
+    </div>
+    <div class="shop">
+        <div class="shop-top">
+            <div>
+                <h3>GUIF</h3>
+                <h3>| Teamshop</h3>
+            </div>
+            {% image "./src/image/teamsales-logo-black.svg", "Stadium", "3rem", "2rem" %}
+        </div>
+        <button id="left" class="btn-shop-left">
+            <span id="shop-left" class="material-symbols-outlined">
+                arrow_left
+            </span>  
+        </button>
+        <div class="games-box">   
+            <div></div>
+        </div>
+        <button id="shop-right" class="btn-shop-right">
+            <span class="material-symbols-outlined">
+                arrow_right
+            </span>  
+        </button>
     </div>
 </main>
