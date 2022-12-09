@@ -31,7 +31,7 @@ function myFunc(p1, p2) {
         document.getElementById("small-news-1").style.color = "#ffffff6f"
         document.getElementById("progress2").style.backgroundColor = "white"
         document.getElementById("progress1").style.backgroundColor = "#ffffff6f"
-        document.getElementById("news").style.backgroundImage = "url(../img/news2.png)"
+        document.getElementById("news").style.backgroundImage = "url(dist/img/news2.png)"
         document.getElementById('bar2').style.transition="linear 7s"
         document.getElementById('bar2').style.width="100%"
         document.getElementById('bar1').style.transition="0s"
