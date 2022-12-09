@@ -18,8 +18,10 @@ function myFunc(p1, p2) {
         document.getElementById("progress1").style.backgroundColor = "white"
         document.getElementById("progress4").style.backgroundColor = "#ffffff6f"
         document.getElementById("news").style.backgroundImage="url(img/4UUdcc6JtM-600.jpeg)"
-        document.getElementById('bar1').style.animation="bar 7s linear";
-        document.getElementById('bar4').style.animation="none";
+        document.getElementById('bar1').style.transition="linear 7s"
+        document.getElementById('bar1').style.width="100%"
+        document.getElementById('bar4').style.transition="0s"
+        document.getElementById('bar4').style.width="0%"
     }
     if (i == 1) {
         document.getElementById("NewsHeader").innerHTML = news2 
@@ -28,9 +30,10 @@ function myFunc(p1, p2) {
         document.getElementById("progress2").style.backgroundColor = "white"
         document.getElementById("progress1").style.backgroundColor = "#ffffff6f"
         document.getElementById("news").style.backgroundImage="url(img/news2.png)"
-        document.getElementById('bar2').style.animation="bar 7s linear";
-        document.getElementById('bar1').style.animation="none";
-    }
+        document.getElementById('bar2').style.transition="linear 7s"
+        document.getElementById('bar2').style.width="100%"
+        document.getElementById('bar1').style.transition="0s"
+        document.getElementById('bar1').style.width="0%"    }
     if (i == 2) {
         document.getElementById("NewsHeader").innerHTML = news3
         document.getElementById("small-news-3").style.color = "white"
@@ -38,8 +41,10 @@ function myFunc(p1, p2) {
         document.getElementById("progress3").style.backgroundColor = "white"
         document.getElementById("progress2").style.backgroundColor = "#ffffff6f"
         document.getElementById("news").style.backgroundImage="url(img/news3.jpg)"
-        document.getElementById('bar3').style.animation="bar 7s linear";
-        document.getElementById('bar2').style.animation="none";
+        document.getElementById('bar3').style.transition="linear 7s"
+        document.getElementById('bar3').style.width="100%"
+        document.getElementById('bar2').style.transition="0s"
+        document.getElementById('bar2').style.width="0%"
     }
     if (i == 3) {
         document.getElementById("NewsHeader").innerHTML = news4
@@ -48,8 +53,10 @@ function myFunc(p1, p2) {
         document.getElementById("progress4").style.backgroundColor = "white"
         document.getElementById("progress3").style.backgroundColor = "#ffffff6f"
         document.getElementById("news").style.backgroundImage="url(img/news4.png)"
-        document.getElementById('bar4').style.animation="bar 7s linear";
-        document.getElementById('bar3').style.animation="none";
+        document.getElementById('bar4').style.transition="linear 7s"
+        document.getElementById('bar4').style.width="100%"
+        document.getElementById('bar3').style.transition="0s"
+        document.getElementById('bar3').style.width="0%"
     }
     
     i++

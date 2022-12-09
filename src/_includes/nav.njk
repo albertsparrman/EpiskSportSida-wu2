@@ -1,14 +1,30 @@
-<nav>
+<nav id="navbar">
     <div class="top">
+        <button id="menu">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </button>
         <a href="/">{% image "./src/image/_genLogga.png", "logo" %}</a>
     </div>
-    <ul>
+    <ul id="ul">
         {% for item in navigation %}
             <a href="{{ item.url }}">
-                <li>
+                <li id="li">
                     {{ item.title }}
                 </li>
             </a>
         {% endfor %}
     </ul>
+
+    <ul id="ul2">
+        {% for item in navigation %}
+            <a href="{{ item.url }}">
+                <li id="li">
+                    {{ item.title }}
+                </li>
+            </a>
+        {% endfor %}
+    </ul>
+    <script type="application/x-javascript" src="hamburg.js"></script>
 </nav>

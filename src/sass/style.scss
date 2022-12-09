@@ -34,30 +34,102 @@ html, body {
 }
 
 
-
 nav {
     width: 100%;
     text-align: center;
+    position: relative;
+    height: 8.48rem;
 }
 
+
 .top {
+    display: flex;
     background-color: #0e0e0e;
     color: white;
     border-bottom: solid 4px white;
     padding: 10px;
     padding-top: 14px;
+    justify-content: center;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
 }
 
-ul {
+#ul {
     align-items: center;
     box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.425);
     display: flex;
+    position: absolute;
     list-style: none;
+    top: 6rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 9;
+    justify-content: space-evenly;
+    background-color: #aeaeaf;
+    transition: 0s;
+}
+
+#ul2 {
+    align-items: center;
+    box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.425);
+    display: flex;
+    position: absolute;
+    list-style: none;
+    top: 6rem;
+    width: 100%;
     margin: 0;
     padding: 0;
     justify-content: space-evenly;
-    background-color: #aeaeaf;
+    background-color: rgba(20, 20, 20, 0.92);
+    transition: 0s;
+    z-index: 8;
+
 }
+
+#menu {
+    visibility: hidden;
+    position: absolute;
+    height: 2.6rem;
+    padding: 0.35rem;
+    left: 20px;
+    top: 1.5rem;
+    background-color: transparent;
+}
+
+
+@media (max-width: 980px) {
+    #menu {
+        visibility: visible;
+    }
+    #ul {
+        z-index: 0;
+    }
+    #ul2 {
+        background-color: rgba(20, 20, 20, 0.92);
+        height: 20rem;
+        width: 100%;
+        z-index: 8;
+        top: -14rem;
+        transition: 0s;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #ul2 > a:hover {
+        background-color: transparent;
+        color: var(--white);
+    }
+
+    li {
+        text-align: left;
+    }
+    nav {
+        height: 6rem;
+    }
+}
+
 
 li {
     font-size: 1rem;
@@ -80,6 +152,8 @@ ul > a:hover {
 .top > a > picture > img {
     width: 3rem;
     height: auto;
+    margin: 0.2rem;
+    padding: 0rem;
 }
 
 .games {
@@ -169,11 +243,6 @@ ul > a:hover {
 
 }
 
-@keyframes bg-zoom {
-    0% {background-size: 100%;}
-    80% {background-size: 115%;}
-    100% {background-size: 115%;}
-}
 
 .news > h1, .news > h2 {
     margin: 0;
@@ -190,26 +259,6 @@ ul > a:hover {
     animation-iteration-count: infinite;
 }
 
-@keyframes title {
-    0% {
-        color: transparent;
-        left: 50%;
-    }
-    20% {
-        color: white;
-        left: 0;
-    }
-
-    80% {
-        color: white;
-        left: 0;
-    }
-
-    100% {
-        color: transparent;
-        left: -50%;
-    }
-}
 
 
 .mini-news {
@@ -381,6 +430,7 @@ a {
     height: 30px;
     width: 140px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .kontakt {
