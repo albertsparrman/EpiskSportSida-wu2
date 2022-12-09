@@ -35,7 +35,8 @@ function myFunc(p1, p2) {
         document.getElementById('bar2').style.transition="linear 7s"
         document.getElementById('bar2').style.width="100%"
         document.getElementById('bar1').style.transition="0s"
-        document.getElementById('bar1').style.width="0%"    }
+        document.getElementById('bar1').style.width="0%"    
+    }
     if (i == 2) {
         document.getElementById("NewsHeader").innerHTML = news3
         document.getElementById("small-news-3").style.color = "white"
