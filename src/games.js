@@ -6,7 +6,7 @@ let b = 1
 let c = 2
 
 left.addEventListener('click', _ => {
-   if (a === +2) {
+   if (a == 0) {
 
    }
    else {
