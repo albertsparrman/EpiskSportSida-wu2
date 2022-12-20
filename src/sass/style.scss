@@ -11,10 +11,12 @@ html, body {
     font-family: 'Inter', sans-serif;
     background-color: #090909;
     scroll-behavior: smooth;
+    box-sizing: border-box !important;
+    overflow-x: hidden;
 }
 
 body {
-    overflow-x: hidden;
+ 
 }
 
 .episkt {
@@ -689,9 +691,13 @@ a {
     right: 0;
 }
 .bra-losning {
-    visibility: hidden;
+    z-index: -100;
     position: absolute;
-    height: 0rem;
     top: 0;
-    z-index: -10000;
+    left: 0rem;
+}
+
+.bra-losning > picture > img {
+    width: 0rem;
+    height: auto;
 }
