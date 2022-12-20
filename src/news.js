@@ -16,7 +16,7 @@ function myFunc(p1, p2) {
         document.getElementById("small-news-4").style.color = "#ffffff6f"
         document.getElementById("progress1").style.backgroundColor = "white"
         document.getElementById("progress4").style.backgroundColor = "#ffffff6f"
-        document.getElementById("news").style.backgroundImage="url(/img/4UUdcc6JtM-600.jpeg)"
+        document.getElementById("news").style.backgroundImage="url(/img/d31nzVvKF4-600.jpeg)"
         document.getElementById('bar1').style.transition="linear 7s"
         document.getElementById('bar1').style.width="100%"
         document.getElementById('bar4').style.transition="0s"

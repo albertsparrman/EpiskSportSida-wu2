@@ -13,6 +13,10 @@ html, body {
     scroll-behavior: smooth;
 }
 
+p{
+    color: white;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -60,7 +64,7 @@ nav {
 
 .line {
     position: absolute;
-    height: 4px;
+    height: 2.8px;
     top: 6.034rem;
     box-sizing: border-box;
     z-index: 10;
@@ -292,9 +296,9 @@ ul > a:hover {
     height: 40rem;
     display: grid;
     position: relative;
-    background-image: url(/img/4UUdcc6JtM-600.jpeg);
+    background-image: url(/img/d31nzVvKF4-600.jpeg);
     background-size: cover;
-    background-position: center 70%;
+    background-position: center;
     filter: brightness(0.3);
     box-shadow: inset 00px -190px 200px 30px #1d1d1d;
     z-index: 0;
@@ -683,4 +687,11 @@ a {
 
 .btn-shop-right {
     right: 0;
+}
+.bra-losning {
+    visibility: hidden;
+    position: absolute;
+    height: 0rem;
+    top: 0;
+    z-index: -10000;
 }
