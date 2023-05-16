@@ -2,6 +2,8 @@
     --order1: 0;
     --order2: 1;
     --order3: 2;
+    --order4: 3;
+    --order5: 5;
     --white: #ffffff6f;
 }
 
@@ -10,10 +12,12 @@ html, body {
     padding: 0;
     font-family: 'Inter', sans-serif;
     background-color: #090909;
+    color: white;
     scroll-behavior: smooth;
     box-sizing: border-box !important;
     overflow-x: hidden;
 }
+
 
 body {
  
@@ -233,34 +237,40 @@ ul > a:hover {
     overflow-x: hidden;
 }
 
-.games-box > div:nth-child(1) {
+.games-box > div {
     position: absolute;
     top: 0;
     height: 100%;
-    left: calc(100% / 3 * var(--order1));
     background-color: #101111;
     width: calc(100% / 3);
     transition: 0.9s;
     cursor: pointer;
 }
+
+.test {
+    
+}
+
+.games-box > div:nth-child(1) {
+    left: calc(100% / 3 * var(--order1));
+}
+
 .games-box > div:nth-child(2) {
-    position: absolute;
-    top: 0;
-    height: 100%;
     left: calc(100% / 3 * var(--order2));
-    background-color: #101111;
-    width: calc(100% / 3);
-    transition: 0.9s;
 }
+
 .games-box > div:nth-child(3) {
-    position: absolute;
-    top: 0;
-    height: 100%;
     left: calc(100% / 3 * var(--order3));
-    background-color: #101111;
-    width: calc(100% / 3);
-    transition: 0.9s;
 }
+
+.games-box > div:nth-child(4) {
+    left: calc(100% / 3 * var(--order4));
+}
+
+.games-box > div:nth-child(5) {
+    left: calc(100% / 3 * var(--order5));
+}
+
 
 @media (max-width: 780px) {
     .games{
@@ -700,4 +710,8 @@ a {
 .bra-losning > picture > img {
     width: 0rem;
     height: auto;
+}
+
+.test {
+    color: white;
 }

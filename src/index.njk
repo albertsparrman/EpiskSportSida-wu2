@@ -4,6 +4,7 @@ title: GUIF Innebandy
 ---
 
 <main>
+
     <div class="games">
         <button id="left" class="btn-games-left">
             <span class="material-symbols-outlined">
@@ -25,13 +26,20 @@ title: GUIF Innebandy
                     </div>
                 </div>
             </div>
-            <div></div>
             
-            <div>
-                <p class="">
-                    {{ gamesAPI[0] }}
-                </p>
+            <div class="test">
+                aa {{ gamesAPI.data[0].id }}
             </div>
+
+            {% asyncAll  item in gamesAPI.data %}
+                <div>
+                    <p>{{ item.name }}</p>
+                </div>
+            {% endall %}
+            <div class="{{ gamesAPI.data[0].id }}"> 
+
+            </div>
+
         </div>
         <button id="right" class="btn-games-right">
             <span class="material-symbols-outlined">
