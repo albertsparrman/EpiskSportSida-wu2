@@ -6,7 +6,7 @@ module.exports = async function() {
 
     /* This returns a promise */
     return EleventyFetch(url, {
-        duration: "30s", // save for 1 day
+        duration: "1d", // save for 1 day
         type: "json"    // we’ll parse JSON for you
     });
 };
