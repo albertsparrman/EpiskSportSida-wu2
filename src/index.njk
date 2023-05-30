@@ -33,7 +33,7 @@ title: GUIF Innebandy
 
             </div>
 
-            {% asyncAll item in gamesAPI.workouts[0].h1 %}
+            {% asyncAll item in gamesAPI.data[0].h1 %}
                 <div>
                     <div class="center">
                         <div class="{{ item.status }}"><p>{{ item.status }}</p> <p class="date">{{ item.date }}</p> <div class="dot"></div></div>
