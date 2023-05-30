@@ -29,15 +29,15 @@ title: GUIF Innebandy
             </div>
             
             <div class="test">
-                aa<p>{{ gamesAPI.h1[0].division }} {{ gamesAPI.h1[0].home.name }}</p>
+                aa<p>{{ gamesAPI.workouts[0].h1[0].date }}</p>
 
             </div>
 
-            {% asyncAll item in gamesAPI.h1 %}
+            {% asyncAll item in gamesAPI.workouts[0].h1 %}
                 <div>
                     <div class="center">
                         <div class="{{ item.status }}"><p>{{ item.status }}</p> <p class="date">{{ item.date }}</p> <div class="dot"></div></div>
-                        <div class="scorebox">
+                        <div class="scorebox">  
                             
                             <div class="img-size {{ item.status }}">{% image "./src/image/_genLogga.png", "logo", "200" %}</div>
                             <p class="score">{{ item.home.score }} - {{ item.away.score }}</p>
